@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	chat alph = 'z';
+	char alph = 'z';
 
-	while (c >= 'a')
+	while (alph >= 'a')
 	{
-		putchar(c);
-		c--;
+		putchar(alph);
+		alph--;
 	}
 
 	putchar('\n');
