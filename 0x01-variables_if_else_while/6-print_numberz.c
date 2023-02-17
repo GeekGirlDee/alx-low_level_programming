@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	char alph = '0';
+	int alph = 0;
 
-	while (alph <= '9')
+	while (alph < 10)
 	{
-		putchar('\n');
+		putchar(48 + alph);
 		alph++;
 	}
 
