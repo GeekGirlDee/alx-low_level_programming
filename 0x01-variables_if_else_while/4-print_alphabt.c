@@ -10,11 +10,9 @@ int main(void)
 
 	while (alph <= 'z')
 	{
-		if (alph != 'e' && alph != 'q')
-		{
+		if ((alph != 'e' && alph != 'q') && alph <= 'z'
 			putchar(alph);
-		}
-		alph;
+			alph++;
 	}
 	putchar('\n');
 	return (0);
