@@ -7,21 +7,20 @@
  */
 int main(void)
 {
-	char alph = 'a';
+	char alphA = 'a';
+	char alphB = 'A';
 
-	while (alph <= 'z')
+	while (alphA <= 'z')
 	{
-		putchar(alph);
-		alph++;
+		putchar(alphA);
+		alphA++;
 	}
 
-	alph = 'A';
-
-	while (alph <= 'Z')
+	while (alphB <= 'Z')
 	{
-		putchar(alph);
-		alph++;
-
+		putchar(alphB);
+		alphB++;
+	}
 	putchar('\n');
 	return (0);
 }
