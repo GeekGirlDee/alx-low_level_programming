@@ -15,42 +15,24 @@
  */
 int main(void)
 {
-	int a = 0;
-	int a1;
-	int a2;
+	int num1, num2;
 
-	int b;
-	int b1;
-	int b2;
-
-	while (a <= 98)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		a1 = (a / 10 + '0');
-		a2 = (a % 10 + '0');
-		b = 0;
-
-		while (b <= 99)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			b1 = (b / 10 + '0');
-			b2 = (b % 10 + '0');
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (a < b)
-			{
-				putchar(a1);
-				putchar(a2);
-				putchar(' ');
-				putchar(b1);
-				putchar(b2);
+			if (num1 == 98 && num2 == 99)
+				continue;
 
-				if (a != 98)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			b++;
+			putchar(',');
+			putchar(' ');
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
