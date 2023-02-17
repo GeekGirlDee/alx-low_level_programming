@@ -12,9 +12,9 @@
 int main(void)
 {
 	int num1;
-	int numb2 = 0;
+	int num2 = 0;
 
-	while (numb2 < 10)
+	while (num2 < 10)
 	{
 		num1 = 0;
 		while (num1 < 10)
@@ -24,7 +24,7 @@ int main(void)
 				putchar('0' + num1);
 				putchar('0' + num2);
 
-				if (num1 + numb2 != 17)
+				if (num1 + num2 != 17)
 				{
 					putchar(',');
 					putchar(' ');
