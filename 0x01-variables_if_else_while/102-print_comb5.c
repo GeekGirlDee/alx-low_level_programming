@@ -50,7 +50,7 @@ int main(void)
 			}
 			b++;
 		}
-		a++
+		a++;
 	}
 	putchar('\n');
 	return (0);
