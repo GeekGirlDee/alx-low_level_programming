@@ -1,48 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - A program that prints all possible different
- * combination of three digits
- * Numbers must be separated by a coma , followed by a space
- * The three digits must be different
- * 012, 120, 102, 021, 201, 210 are considered the same
- * combination of the three digits
- * Print only the smallest combination of three digits
+ * main - A program that prints all possible combinations
+ * of two-digits numbers
+ * The numbers should range from 0 to 99
+ * The two numbers should be printed with two digits. 1 should
+ * be printed as 01
+ * The combination of numbers must be separated by comma, followed
+ * by a space
+ * The combinations of numbers should be printed in ascending order
+ * 00 01 and 01 00 are considered as the same combination
+ * of the numbers 0 and 1
  * Return: 0 (pass)
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int num1, num2;
 
-	while (c < 10)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		b = 0;
-		while (b < 10)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			a = 0;
-			while (a < 10)
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 / 10 != 9 || num1 % 10 != 8)
 			{
-				if (a != b && b != c && c < b)
-				{
-					putchar('0' + c);
-					putchar('0' + b);
-					putchar('0' + a);
-
-					if (a + b + c != 9 + 8 + 7)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				a++;
+				putchar(44);
+				putchar(32);
 			}
-			b++;
 		}
-		c++;
 	}
-
 	putchar('\n');
 	return (0);
 }
