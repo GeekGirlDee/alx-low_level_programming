@@ -15,24 +15,22 @@
  */
 int main(void)
 {
-	int i, j;
+	int num1, num2, num3;
 
-	for (i = 0; i < 100; i++)
-	{
-		for (j = i + 1; j < 100; j++)
-		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			if (i != 98 || j != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
+	for (num1 = 48; num1 <= 57; num1++)
+		for (num2 = 48; num2 <= 57; num2++)
+			for (num3 = 48; num3 <= 57; num3++)
+				if (num3 > num2 && num2 > num1)
+				{
+					putchar(num1);
+					putchar(num2);
+					putchar(num3);
+					if (num1 != 55 || num2 != 56)
+					{
+						putchar(',');
+						putchar(32);
+					}
+				}
 	putchar('\n');
 	return (0);
 }
