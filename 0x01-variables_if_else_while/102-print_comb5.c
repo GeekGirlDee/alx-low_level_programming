@@ -21,6 +21,7 @@ int main(void)
 	int b;
 	int b1;
 	int b2;
+
 	while (a <= 98)
 	{
 		a1 = (a / 10 + '0');
