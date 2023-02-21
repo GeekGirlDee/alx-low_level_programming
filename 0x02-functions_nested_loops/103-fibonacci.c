@@ -20,7 +20,7 @@ int main(void)
 		{
 			tot += sum;
 		}
-		printf("%li\n", tot);
-		return (0);
 	}
+	printf("%li\n", tot);
+	return (0);
 }
