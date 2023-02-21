@@ -22,4 +22,5 @@ int main(void)
 		}
 		printf("%li\n", tot);
 		return (0);
+	}
 }
