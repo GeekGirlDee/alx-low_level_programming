@@ -1,16 +1,17 @@
 #include "main.h"
 /**
- * main - A program that prints _putchar, followed by a new line
- * Return: 0 (Pass)
+ * main - A program that prints _putchar followed by a new line
+ * Return: 0(Pass)
+ *
  */
-int main(void)
+void main(void)
 {
-	char alp[] = "_putchar";
+	char alph[] = "_putchar";
 	int num;
 
-	for (num = 0; num < 8; num++)
+	for (alph = 0; alph < 8; alph++)
 	{
-		_putchar(alp[c]);
+		_putchar(alph[num]);
 	}
 	_putchar('\n');
 	return (0);
