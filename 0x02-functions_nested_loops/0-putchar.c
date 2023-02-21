@@ -4,7 +4,7 @@
  * Return: 0(Pass)
  *
  */
-void main(void)
+int main(void)
 {
 	char alph[] = "_putchar";
 	int num;
