@@ -1,6 +1,7 @@
-#include <main.h>
+#include "main.h"
 /**
- * print_alhpabet - A program that prints all alphabets in lowercases
+ * print_alphabet - A program that prints all alphabets in lowercases
+ *
  */
 void print_alphabet(void)
 {
