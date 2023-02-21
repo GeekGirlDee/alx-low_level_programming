@@ -9,7 +9,7 @@ int main(void)
 	char alph[] = "_putchar";
 	int num;
 
-	for (alph = 0; alph < 8; alph++)
+	for (num = 0; num < 8; num++)
 	{
 		_putchar(alph[num]);
 	}
