@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * positive_or_negative - Entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-int positive_or_negative(void)
+int main(void)
 {
 	int n;
 
