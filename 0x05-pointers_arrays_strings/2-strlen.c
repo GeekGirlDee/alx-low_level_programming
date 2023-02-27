@@ -4,11 +4,11 @@
  * @c: the string to be operated on.
  * Return: int
  */
-int _strlen(char *s)
+int _strlen(char *c)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{}
 	return (i);
 }
