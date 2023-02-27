@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - A program that returns the length of a string.
  * @c: the string to be operated on.
