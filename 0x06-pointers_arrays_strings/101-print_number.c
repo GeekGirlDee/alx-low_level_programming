@@ -1,12 +1,9 @@
 #include "main.h"
-
 /**
  * print_number - A function that prints an integer
- * you can only use _putchar function to print,
- * you are not allowed to use long data type, arrays,
- * pointers or hard-code special values
  * @n: integer to be printed;
  */
+
 void print_number(int n)
 {
 	unsigned int n1;
