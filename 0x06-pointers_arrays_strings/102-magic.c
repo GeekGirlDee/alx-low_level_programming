@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+* main - A program tht prints a[2] = 98
 * Add one line to the code, so that the program prints a[2] = 98,
 * followed by a new line
 * you can only write one line
