@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * leet - A function that encodes a string in 1337
- * You can only use two loops in your code and one if statement
- * You are not allowed to use switch statement or any ternary operation
- * @s: string to be encoded
- * Return: the resulting string;
- */
+* leet - A function that encodes a string in 1337
+* You can only use two loops in your code and one if statement
+* You are not allowed to use switch statement or any ternary operation
+* @s: string to be encoded
+* Return: the resulting string;
+*/
 char *leet(char *s)
 {
 	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
