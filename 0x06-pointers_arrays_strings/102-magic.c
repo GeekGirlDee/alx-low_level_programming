@@ -9,7 +9,7 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 	/*
-	* write your line of code here...
+	* main - A program that prints a[2] = 98, followed by a new line
 	* Remember:
 	* - you are not allowed to use a
 	* - you are not allowed to modify p
