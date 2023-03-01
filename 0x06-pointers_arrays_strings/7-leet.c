@@ -9,21 +9,20 @@
  */
 char *leet(char *s)
 {
-	int i, j;
-
-	char *a = "aAeEoOtTlL";
-	char *b = "4433007711";
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; alphaArr[j] != '\0'; j++)
 		{
-			if (s[i] == a[j])
+			if (s[i] == alphaArr[j])
 			{
-				s[i] = b[j];
+				s[i] = alphaArr[j + 1];
+				break;
 			}
 		}
 	}
 	return (s);
 }
-
