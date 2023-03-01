@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - A function that prints 98\n 
+ * main - A function that prints 98\n
  * Return: 0
  */
 
