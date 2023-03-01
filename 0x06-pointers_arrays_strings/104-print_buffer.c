@@ -3,28 +3,40 @@
 
 /**
 * print_buffer - prints a s bytes of a buffer
-* @c: buffer to print
-* @s: bytes of buffer to print
-* @l: line of buffer to print
-* Return: void
+* @b: input
+* @size: input
+* Return: output
 */
 void print_buffer(char *b, int size)
 {
-	int i;
+	int i, j, k, f;
 
-	for (i = 0; i <= (size - 1) / 10 && size; i++)
+	if (size <= 0)
 	{
-		printf("%08x: ", i * 10);
-		if (i < size / 10)
-		{
-			print_line(b, 9, i);
-		}
-		else
-		{
-			print_line(b, size % 10 - 1, i);
-		}
-		putchar('\n');
+		printf("\n");
+		return;
 	}
-	if (size == 0)
-		putchar('\n');
+	for (i = 0; i < size; i += 10)
+	{
+		printf("%08x: ", i);
+		for (j = i; j < i + 10; j += 2)
+		{
+			for (k = j; k <= j + 1; k++)
+				if ((b[k] != 0) && (k < size))
+					printf("%02x", b[k]);
+				else if (k < size)
+					printf("%02x", 0);
+				else
+					printf("  ");
+			printf(" ");
+		}
+		for (f = i; f < i + 10; f++)
+		{
+			if ((b[f] >= 32 && b[f] <= 126) && (f < size))
+				printf("%c", b[f]);
+			else if (f < size)
+				printf("%c", '.');
+		}
+		printf("\n");
+	}
 }
