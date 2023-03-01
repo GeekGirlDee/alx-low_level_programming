@@ -1,13 +1,9 @@
 #include <stdio.h>
 /**
 * main - A program tht prints a[2] = 98
-* Add one line to the code, so that the program prints a[2] = 98,
-* followed by a new line
-* you can only write one line
-* You are not allowed to modify the variable p, or use ',',
-* not allowed to code anything expect the line
 * Return: value
 */
+
 int main(void)
 {
 	int n;
