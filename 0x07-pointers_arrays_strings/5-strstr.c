@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _ststr - A function that locates a substring
+ * _strstr - A function that locates a substring
  * @haystack: string to search in
  * @needle: substring to look for
  *
