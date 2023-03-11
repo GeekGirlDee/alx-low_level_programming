@@ -7,8 +7,9 @@
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
- * Return: 1 - An error will be printed if the program doesn't get two arguments
- * 	0 - A success will be printed if two arguments are found by the program
+ * Return: 1 - An error will be printed if the program doesn't
+ * get two arguments
+ * 0 - A success will be printed if two arguments are found by the program
  */
 int main(int argc, char *argv[])
 {
