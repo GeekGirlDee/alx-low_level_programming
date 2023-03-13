@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-char *create_array(unisgned in size, char c);
+char *create_array(unsigned in size, char c);
 char *_strdup(char *str);
 char *_str_concat(char *str);
 int **alloc_grid(int width, int height);
