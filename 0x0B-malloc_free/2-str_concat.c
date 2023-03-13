@@ -24,23 +24,23 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[ci] != '\0')
 		ci++;
-	concat = malloc(sizeof(char) * (i + ci + 1));
+	concat_str = malloc(sizeof(char) * (i + ci + 1));
 
-	if (concat == NULL)
+	if (concat_str == NULL)
 		return (NULL);
 	i = ci = 0;
 
 	while (s1[i] != '\0'; i++)
 	{
-		concat[i] = s1[i];
+		concat_str[i] = s1[i];
 	}
 
 	while (s2[ci] != '\0'; i++)
 	{
-		concat[i] = s2[ci];
+		concat_str[i] = s2[ci];
 		ci++;
 	}
-	concat[i] = '\0';
-	return (concat);
+	concat_str[i] = '\0';
+	return (concat_str);
 }
 
