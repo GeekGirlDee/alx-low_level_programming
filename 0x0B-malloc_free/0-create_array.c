@@ -8,6 +8,7 @@
  * @c: an initialized character
  * Return: 0 if size is greater than 0 else NULL if is 0
  */
+
 char *create_array(unsigned int size, char c)
 {
 	char *str;
