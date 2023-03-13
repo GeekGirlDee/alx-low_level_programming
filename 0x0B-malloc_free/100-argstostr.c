@@ -9,7 +9,7 @@
  * Return: 0
  */
 
-char argstostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	int i, n, r, l;
 	char *str;
